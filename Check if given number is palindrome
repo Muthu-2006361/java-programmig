@@ -1,0 +1,30 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner se = new Scanner(System.in);
+        int a = se.nextInt();
+        int n = a; 
+        int r = 0;
+        String kk=String.valueOf(a);
+        if(kk.length()<3){
+System.out.println("Invalid Input");}
+    else{
+
+        while (n != 0) {
+            int g = n % 10;
+            r = r * 10 + g;
+            n = n / 10;
+        }
+
+        if (a == r) {
+            System.out.println("palindrome");
+        } else {
+            System.out.println("not palindrome");
+        }}
+    }
+}
