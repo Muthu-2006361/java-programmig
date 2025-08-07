@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        char a;
+        Scanner se=new Scanner(System.in);
+         a =se.next().charAt(0);
+      if(a=='A'||a=='E'||a=='a'||a=='i'||a=='I'||a=='e'||a=='o'||a=='O'||a=='u'||a=='U')
+      {
+          System.out.printf("The Character %c is Vowel",a);
+      }
+     else {
+         System.out.printf("The Character %c is Consonant",a);
+     }
+        
+       }
+}
