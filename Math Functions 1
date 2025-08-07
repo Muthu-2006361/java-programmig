@@ -1,0 +1,32 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        float a;
+        int b;
+        int c;
+        int d;
+       Scanner as = new Scanner(System.in);
+       a=as.nextFloat();
+       b=as.nextInt();
+       c=as.nextInt();
+       d=as.nextInt();
+        int aa= (int) (Math.floor(a));
+        int bb= (int) (Math.ceil(a));
+        int cc=(int) Math.sqrt(b);
+        int dd=(int) Math.pow(c,d);
+       System.out.println(aa);
+       System.out.println(bb);
+       System.out.println(cc);
+       System.out.println(dd);
+    
+       
+        
+        
+    }
+}
