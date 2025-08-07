@@ -1,0 +1,28 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       Scanner se = new Scanner(System.in);
+        int a=se.nextInt();
+        String b=String.valueOf(a);
+        int l=b.length();
+        if (l>3){
+            int num=a;
+            int count=0;
+            while(num!=0){
+                int c=num%10;
+                count=count+c;
+                num=num/10;
+            }
+            System.out.println("Sum of digit is "+count);
+          }
+        else{
+            System.out.println("Invalid Input");
+        }
+    }
+}
