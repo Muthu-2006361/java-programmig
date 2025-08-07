@@ -1,0 +1,27 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+      int b;
+     Scanner se = new Scanner(System.in);
+     b=se.nextInt();
+    if(b<15000){
+        float hra = (float) (0.15*b);
+        float da = (float) (0.90*b);
+        float to = b+hra+da;
+        System.out.printf("%.2f",to);
+    }
+    else {
+         float hra= 5000; 
+        float da = (float) (0.98*b);
+        float to = b+hra+da;
+        System.out.printf("%.2f",to);
+    }
+  
+        }
+}
