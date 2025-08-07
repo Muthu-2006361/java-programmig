@@ -1,0 +1,36 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner se = new Scanner(System.in);
+        int a=se.nextInt();
+        int b=se.nextInt();
+        char c=se.next().charAt(0);
+        float d;
+        switch(c){
+            case '+':
+             d=(float) a+b;
+            System.out.println("Addition of two number is "+d);
+            break;
+            case '/':
+                d=(float) a/b;
+                System.out.println("Division of two number is "+d);
+                break;
+            case '*':
+                d=(float) a*b;
+                System.out.println("Multiplication of two number is "+d);
+                break;
+            case '-':
+                d=(float) a-b;
+                System.out.println("Subtraction of two number is "+d);
+                break;
+            default:
+                System.out.println("Invalid Input");
+        }
+    }
+}
