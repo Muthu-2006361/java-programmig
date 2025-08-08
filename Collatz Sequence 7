@@ -1,0 +1,38 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       Scanner se=new Scanner(System.in);
+        System.out.println("Enter a number");
+        
+        int a=se.nextInt();
+        System.out.println(a);
+        int b=a;
+        int count=0;
+        if(a!=1){
+             while(b>1){
+            if(b%2==0){
+                b=b/2;
+                System.out.println(b);
+                count=count+1;
+            }
+            else{
+                b=(3*b)+1;
+                System.out.println(b);
+                count=count+1;
+            }
+           } System.out.println("count:"+count);
+   
+        }
+           else{
+            System.out.println("count:"+count);
+    }
+            
+        }
+ 
+}
