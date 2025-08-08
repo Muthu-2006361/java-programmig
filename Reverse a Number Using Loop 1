@@ -1,0 +1,27 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner se=new Scanner(System.in);
+        int a=se.nextInt();
+        if(a>0 && a<1000000000){
+            int n=a;
+            int r=0;
+            while(n!=0){
+                int k=n%10;
+                r=r*10+k;
+                n=n/10;
+                
+            }
+            System.out.println(r);
+        }
+        else{
+            System.out.println("Invalid Input");
+        }
+    }
+}
