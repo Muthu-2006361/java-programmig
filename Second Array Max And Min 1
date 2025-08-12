@@ -1,0 +1,48 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner se = new Scanner(System.in);
+        int a = se.nextInt();
+        int arr[] = new int[a];
+        int ee = 0;
+        int oo = 0;
+
+        for (int i = 0; i < a; i++) {
+            arr[i] = se.nextInt();
+            if (i % 2 == 0) ee++;
+            else oo++;
+        }
+
+        int e[] = new int[ee];
+        int o[] = new int[oo];
+        int k = 0, m = 0;
+
+        for (int i = 0; i < a; i++) {
+            if (i % 2 == 0) {
+                e[k] = arr[i];
+                k++;
+            } else {
+                o[m] = arr[i];
+                m++;
+            }
+        }
+
+        Arrays.sort(e);
+        Arrays.sort(o);
+
+        if (ee >= 2 && oo >= 2) {
+            int res = e[ee - 2] + o[1];
+            System.out.println("Sum=" + res);
+        } 
+    }
+}
+
+    
+
