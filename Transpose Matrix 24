@@ -1,0 +1,35 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner se=new Scanner(System.in);
+        int a=se.nextInt();
+        int arr[][]=new int[a][a];
+        for(int i=0;i<a;i++){
+           for(int j=0;j<a;j++){
+                 arr[i][j]=se.nextInt();}}
+    System.out.println("Array elements are:");
+    
+     for(int i=0;i<a;i++){
+           for(int j=0;j<a;j++){
+                 System.out.print(arr[i][j]+" ");}
+      System.out.println();}
+          int ak[][]=new int[a][a];
+    for(int i=0;i<a;i++){
+     for(int j=0;j<a;j++){
+       ak[i][j]=arr[j][i];}}
+        System.out.println("Transpose matrix is:");
+        for(int i=0;i<a;i++){
+           for(int j=0;j<a;j++){
+                 System.out.print(ak[i][j]+" ");}
+      System.out.println();}
+     
+        
+    }
+    
+}
