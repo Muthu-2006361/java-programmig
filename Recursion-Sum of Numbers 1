@@ -1,0 +1,27 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner se=new Scanner(System.in);
+        int a =se.nextInt();
+        if(a>=0 && a<=50){
+            int sum=sum(a);
+            System.out.printf("The sum of numbers from 1 to %d : %04d",a,sum);
+        }
+        else{
+            System.out.printf("Enter a Valid Input!!!!!!!!!!!!!!!!!!");
+        }
+    }
+    static int sum(int a){
+               if(a!=0){
+                    return a+sum(a-1);}
+                else{
+                    return 0;
+                }
+                 }
+}
