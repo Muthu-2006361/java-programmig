@@ -1,0 +1,28 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner se=new Scanner(System.in);
+        int a=se.nextInt();
+        if(a>=0 && a<=1000){
+              int su=sum(a);
+        System.out.printf("Sum of Digit:%04d",su);}
+        else{
+            System.out.println("Enter a Valid Input!!!!!!!");
+        }
+    }
+    static int sum(int a){
+       int b=a%10;
+        if(b==0){
+           return 0;}
+           else{
+               
+               return b+sum(a/10);
+           }
+    }
+}
