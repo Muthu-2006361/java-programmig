@@ -1,0 +1,16 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner se=new Scanner(System.in);
+        String s=se.nextLine();
+        String a=se.nextLine();
+        
+        System.out.println(s.trim()+a.trim());
+    }
+}
