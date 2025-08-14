@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner se=new Scanner(System.in);
+        int a=se.nextInt();
+        int count=count(a);
+        System.out.println("The Count the digits: "+count);
+    }
+    static int count(int a){
+    int b=a%10;
+    if(b==0){
+       return 0;}
+    else{
+        return 1+count(a/10);
+    }}
+}
