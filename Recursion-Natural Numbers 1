@@ -1,0 +1,29 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner se =new Scanner(System.in);
+        int a=se.nextInt();
+        if(a>0 && a<=50){
+            System.out.printf("The first %d Natural Numbers are:\n",a);
+            num(a,1);
+        }
+        else{
+            System.out.println("Enter a Valid Input!!!!!!!!!!!!!!!!!!!!!!!!");
+        }
+    }
+    static void num(int n,int k){
+    
+               if(k<=n){
+                
+                System.out.print(k+" ");
+                num(n,k+1);
+                
+            }
+           }
+}
